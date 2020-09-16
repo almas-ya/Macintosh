@@ -1,0 +1,124 @@
+@media(max-width:991px){
+    .project__article{
+        justify-content: center;
+    }
+    .icon__content{
+        margin-right: 30px;
+    }
+    .icon__content_right{
+        margin-right: 20px;
+    }
+    .content__title{
+        font-size: 52px;
+    }
+}
+@media(max-width:767px){
+    .menu__link{
+        margin-left: 0;
+        line-height: normal;
+    }
+    .header__content{
+        text-align: center;
+        padding: 20px 0;
+    }
+    .header__title{
+        margin-bottom: 0;
+    }
+    .header__info{
+        margin: 20px auto;
+    }
+    .header-link__con{
+        padding: 20px;
+        margin: auto;
+    }
+    .project__article{
+        flex-wrap: wrap;
+    }
+    .project__icon{
+        padding: 51px 0 80px 0;
+    }
+    .icon__content{
+        margin-top: 20px;
+    }
+    .images{
+        flex-wrap: wrap;
+    }
+    .ellips{
+        width: 50px;
+        height: 50px;
+    }
+    .img__spon{
+        margin-top: 30px;
+    }
+    .sponsors{
+        margin: 31px 0 67px 0;
+    }
+    .footer__content{
+        align-items: center;
+        justify-content: center;
+        flex-direction: column;
+        text-align: center;
+    }
+    .footer__mail{
+        margin: 20px 0;
+    }
+    .footer__menu{
+        margin-left: 10px;
+    }
+    .content__title{
+        font-size: 40px;
+    }
+    .content__info{
+        font-size: 18px;
+    }
+}
+@media(max-width:575px){
+    .about__content{
+        margin-top: 40px;
+    }
+    .signature__img{
+        width: 150px;
+    }
+    .header__title{
+        font-size: 30px;
+        line-height: normal;
+    }
+    .header__info{
+        text-align: center;
+        max-width: 300px;
+        width: 100%;
+    }
+    .project__article{
+        flex-direction: column;
+    }
+    .icon__content{
+        margin-right: 0;
+    }
+    .icon__content:nth-child(4){
+        margin-right: 0;
+    }
+    .video__img{
+        padding: 0 20px;
+    }
+    .zayav{
+        flex-direction: column;
+    }
+    .name{
+        margin-bottom: 30px;
+    }
+    .professional{
+        height: 500px;
+    }
+    .professional__title{
+        font-size: 25px;
+    }
+    .person__title{
+        font-size: 24px;
+    }
+    .content__title{
+        font-size: 30px;
+    }
+    .talk__title{
+        font-size: 24px;
+    }
+}

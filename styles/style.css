@@ -1,0 +1,632 @@
+@import "fonts.css";
+/* ==========================================================================================ROOT start ================================================================================================= */
+:root {
+    --fMb: "MB";
+    --fMr: "MR";
+    --fWs: "WS";
+    --fNs: "NS";
+    --fPe: "PE";
+    --fRb: "RB";
+    --white_fe: #fefefe; 
+    --white_light: #f5f5f5; /* цвет для заднего фона секции "icons" */
+    --green: #007d2f;
+    --green_85: rgba(76, 148, 106, 0.85); 
+    --grey: #787878;
+    --grey_advantages: #656565; /* цвет для иконок */
+    --grey_light: #bcbcbc;
+    --black_nash: #1d1d1d; /* цвет для зоголовков */
+    --black_prof: #171717; /* цвет для Professional Skills */
+    --black_head: #191919; /* цвет для заголовков h2 и некоторых иконок */
+    --bg_black: #141414; /* цвет для заднего фона 'footer' */
+    --black_60: #323232;
+    --border_grey: #d8d8d8; /* цвет для серого линии */
+    --prof_bg: #f8f9f9; /* цвет заднего фона professional */
+    --opacity: rgba(32, 22, 0, 0.42); /* цвет для :hover когда наводите на картинки, где стоят после иконок 548 projects */
+    --slide: #b0e8e6; /* цвет слайдов */
+}
+a:hover {
+    text-decoration: none;
+}
+body {
+    font-family: var(--fMb);
+    background: var(--white);
+}
+.title {
+    color: var(--black_head);
+}
+/* =============================================================================================ROOT end ================================================================================================ */
+/* =============================================================================================HEADER start ============================================================================================ */
+.header {
+    background: url(../img/header_bg.jpg) no-repeat;
+    background-size: cover;
+    background-attachment: fixed;
+    height: 670px;
+}
+.menu__link {
+    color: var(--black_head);
+    text-transform: uppercase;
+    font-weight: 500;
+    font-size: 12px;
+    margin-left: 32px;
+    transition: 0.4s;
+}
+.menu__link:hover {
+    color: var(--green);
+}
+.container important {
+    padding-right: 15px;
+    padding-left: 15px;
+}
+.navbar-toggler {
+    font-size: 25px;
+}
+.header__content {
+    margin-top: 76px;
+}
+.header__title {
+    font-family: var(--fMb);
+    font-weight: 500;
+    font-size: 36px;
+    line-height: 45px;
+    margin-bottom: 30px;
+}
+.header__info {
+    font-weight: 100;
+    font-size: 16px;
+    line-height: 24px;
+    color: var(--grey);
+    width: 455px;
+    margin-bottom: 0;
+}
+.header-link__con {
+    font-size: 12px;
+    text-transform: uppercase;
+    background: var(--green);
+    color: var(--white);
+    padding: 22px 57px 23px 45px;
+    margin-top: 53px;
+}
+.header-link__con:hover {
+    color: var(--white);
+    background: rgb(0, 77, 0);
+}
+/* ==================================================================================HEADER end ========================================================================================================= */
+/* ==================================================================================ABOUT start ======================================================================================================== */
+.about__content {
+    text-align: center;
+    margin-top: 96px;
+}
+.about__title {
+    font-size: 34px;
+    font-weight: 500;
+    color: var(--black_head);
+    margin-bottom: 25px;
+}
+.about__info {
+    font-family: var(--fNs);
+    font-weight: 400;
+    font-size: 14px;
+    color: var(--grey);
+    line-height: 20px;
+    margin-bottom: 31px;
+}
+.signature__img {
+    margin-bottom: 42px;
+}
+/* ===============================================================================================ABOUT end ============================================================================================= */
+/* ===============================================================================================PROFESSIONAL start===================================================================================== */
+.professional__title{
+    font-weight: 500;
+    font-size: 30px;
+    color: var(--black_prof);
+}
+.professional__info {
+    text-transform: uppercase;
+    font-weight: 500;
+    font-size: 12px;
+    color: var(--black);
+    margin-top: 40px;
+}
+.line{
+    height: 3px;
+    background: var(--border_grey);
+}
+.green__line{
+    background: var(--green);
+    width: 75%;
+    height: 3px;
+}
+.green__line-web{
+    background: var(--green);
+    width: 90%;
+    height: 3px;
+}
+.green__line-mar{
+    background: var(--green);
+    width: 65%;
+    height: 3px;
+}
+.professional img{
+    width: 50vw;
+    height: 100%;
+    position: absolute;
+    left: 98%;
+    object-fit: cover;
+    top: 0;
+}
+.professional{
+    height: 730px;
+    background: var(--prof_bg);
+}
+/* ===============================================================================================PROFESSIONAL end======================================================================================= */
+/* ===============================================================================================PROJECT start========================================================================================== */
+.project__icon {
+    background: var(--green);
+    padding: 71px 0 80px 0;
+}
+.icon__content {
+    text-align: center;
+}
+.statistic__icon {
+    font-family: var(--fPe);
+    font-size: 48px;
+    color: var(--white);
+    margin-bottom: 11px;
+}
+.icon__title {
+    margin-bottom: 0;
+    font-weight: 500;
+    font-size: 18px;
+    color: var(--white);
+}
+.icon__info {
+    text-transform: uppercase;
+    margin-bottom: 0;
+    font-weight: 500;
+    font-size: 12px;
+    color: var(--white);
+    margin-top: 15px;
+}
+/* ==============================================================================================PROJECT end ============================================================================================ */
+/* ==============================================================================================IMG start ============================================================================================== */
+.info__img {
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
+}
+.look {
+    position: absolute;
+    top: 0;
+    left: 0;
+    right: 0;
+    bottom: 0;
+    font-size: 48px;
+    color: var(--white);
+    background: var(--opacity);
+    transition: 0.2s;
+    opacity: 0;
+}
+.look:hover {
+    opacity: 1;
+}
+/* =============================================================================================IMG end================================================================================================== */
+/* =============================================================================================LOAD start=============================================================================================== */
+.load {
+    background: var(--green);
+    padding: 46px 0 40px 0;
+}
+.load__title {
+    text-transform: uppercase;
+    font-weight: 500;
+    font-size: 21px;
+    color: var(--white);
+    text-align: center;
+    margin-bottom: 0;
+}
+/* =============================================================================================LOAD end================================================================================================= */
+
+/* =============================================================================================PROCESS start============================================================================================ */
+.process {
+    margin: 97px 0 100px 0;
+    text-align: center;
+}
+.process__title {
+    margin-bottom: 0;
+    font-size: 44px;
+    font-weight: 500;
+}
+.process__info {
+    margin: 12px 0 47px;
+    font-family: var(--fNs);
+    font-weight: 400;
+    font-size: 22px;
+    color: var(--grey);
+    line-height: 33px;
+}
+.play {
+    position: absolute;
+    top: 0;
+    left: 0;
+    bottom: 0;
+    right: 0;
+    align-items: center;
+    justify-content: center;
+}
+.ellips {
+    background: var(--green);
+    width: 85px;
+    height: 85px;
+    border-radius: 50%;
+}
+.video__img {
+    max-width: 1110px;
+    width: 100%;
+}
+/* ================================================================================================PROCESS end=========================================================================================== */
+/* ================================================================================================ICONS start=========================================================================================== */
+.advantages {
+    padding: 52px 0 101px 0;
+    background: var(--white_light);
+}
+.advantages__article {
+    text-align: center;
+    margin-top: 51px;
+}
+.advantages__icon {
+    font-family: var(--fPe);
+    color: var(--grey_advantages);
+    font-size: 48px;
+    margin-bottom: 15px;
+}
+.advantages__title {
+    text-transform: uppercase;
+    font-weight: 500;
+    font-size: 12px;
+    color: var(--black_head);
+    margin-bottom: 0;
+}
+.advantages__info {
+    margin-top: 7px;
+    font-family: var(--fNs);
+    font-weight: 400;
+    font-size: 16px;
+    color: var(--grey);
+    line-height: 24px;
+    margin-bottom: 0;
+}
+/* =========================================================================================ICONS end==================================================================================================== */
+
+/* =========================================================================================QUOTES start================================================================================================= */
+.carousel-fullscreen .carousel-inner .carousel-item {
+    height: 100vh; 
+    min-height: 600px; 
+    background-position: center center; 
+    background-repeat: no-repeat; 
+    background-size: cover;
+}
+.carousel-fullscreen .carousel-caption {
+    top: 50%;  
+    bottom: auto;
+    -webkit-transform: translate(0, -50%); 
+    -ms-transform: translate(0, -50%); 
+    transform: translate(0, -50%);
+}
+.carousel .carousel-item {
+    transition-duration: 1.5s;
+}
+.quotes {
+    background: var(--green);
+    padding: 195px 0 60px 0;
+    text-align: center;
+}
+.quotes__info {
+    font-weight: 500;
+    color: var(--white);
+    margin-bottom: 0;
+}
+.quotes__authtor {
+    text-transform: uppercase;
+    font-weight: 500;
+    font-size: 16px;
+    color: var(--white);
+    margin-top: 40px;
+    margin-bottom: 0;
+}
+.slides {
+    margin-top: 102px;
+}
+.slides__carousel{
+    width: 6px !important;
+    height: 6px !important;
+    background: var(--slide);
+    border-radius: 50%;
+    color: var(--slide);
+}
+.slides__carousel.active {
+    width: 10px !important;
+    height: 10px !important;
+}
+/* =========================================================================================QUOTES end=================================================================================================== */
+
+/* =========================================================================================SPONSORS start=============================================================================================== */
+.sponsors {
+    margin: 67px 0 61px 0;
+}
+/* =========================================================================================SPONSORS end================================================================================================= */
+/* =========================================================================================FORMS start================================================================================================== */
+.form__content {
+    background: var(--white_light);
+    padding: 26px 0 100px 0;
+}
+.form__title {
+    font-weight: 500;
+    font-size: 30px;
+    color: var(--black_nash);
+    margin-bottom: 0;
+}
+.form__info {
+    margin: 20px 0 0 0;
+    font-family: var(--fNs);
+    font-size: 16px;
+    color: var(--grey);
+    line-height: 24px;
+}
+.form__anonse {
+    font-family: var(--fNs);
+    font-size: 16px;
+    color: var(--grey);
+    line-height: 24px;
+    text-align: center;
+    margin: 27px 0 0 0;
+}
+input {
+    outline: none;
+    border: none;
+    font-family: var(--fNs);
+    font-weight: 400;
+    font-size: 15px;
+    color: var(--grey);
+    padding: 18px 14px 19px;
+    margin-top: 30px;
+}
+textarea {
+    margin-top: 30px;
+    border: none;
+    outline: none;
+    resize: none;
+    padding: 18px 14px 19px;
+    margin-bottom: 30px;
+}
+.submit__send {
+    background: var(--green);
+    color: var(--white);
+    text-transform: uppercase;
+    font-weight: 500;
+    font-size: 12px;
+    padding: 23px 25px;
+    border: none;
+}
+.submit__send:hover{
+    color: var(--white);
+    background: rgb(0, 77, 0);
+}
+/* =========================================================================================FORMS end==================================================================================================== */
+/* =========================================================================================FOOTER start================================================================================================= */
+.footer {
+    background: var(--bg_black);
+    color: var(--white);
+    padding: 100px 0;
+}
+.footer-copyright__title {
+    font-weight: 500;
+    font-size: 18px;
+    margin-bottom: 0;
+}
+.footer-copyright__info {
+    font-family: var(--fMr);
+    font-size: 15px;
+    color: var(--grey_light);
+    line-height: 24px;
+    margin: 15px 0 0 0;
+    max-width: 237px;
+    width: 100%;
+}
+.footer-mail__title {
+    font-family: var(--fNs);
+    font-weight: 400;
+    font-size: 15px;
+    color: var(--grey_light);
+}
+.footer-mail__title:hover {
+    color: var(--green);
+}
+.footer__tel {
+    font-family: var(--fNs);
+    font-weight: 400;
+    font-size: 15px;
+    color: var(--grey_light);
+}
+.footer__tel:hover {
+    color: var(--green);
+}
+.footer__menu {
+    margin-left: 40px;
+}
+.footer__link {
+    font-family: var(--fNs);
+    font-weight: 400;
+    font-size: 15px;
+    color: var(--grey_light);
+}
+.footer__link:hover {
+    color: var(--green);
+}
+/* =========================================================================================FOOTER end=================================================================================================== */
+/* ====================================================================================================================================================================================================== */
+
+/* =========================================================================================HOME start=================================================================================================== */
+/* =========================================================================================HEADER start================================================================================================= */
+.menu__link_active{
+    color: var(--green);
+}
+/* =========================================================================================HEADER end=================================================================================================== */
+/* =========================================================================================MAIN start=================================================================================================== */
+article{
+    background: var(--green);
+    text-align: center;
+    padding: 108px 0 97px 0;
+}
+
+.person__title{
+    font-weight: 500;
+    font-size: 30px;
+    color: var(--black_prof);
+    margin-bottom: 29px;
+}
+
+.person__description{
+    font-family: var(--fRb);
+    font-size: 17px;
+    color: var(--white_fe);
+    line-height: 27px;
+    margin-bottom: 0;
+}
+.look__home {
+    position: absolute;
+    top: 0;
+    left: 0;
+    right: 0;
+    bottom: 0;
+    font-size: 48px;
+    color: var(--white);
+    background: var(--green_85);
+    transition: 0.2s;
+    opacity: 0;
+}
+.look__home:hover {
+    opacity: 1;
+}
+.home__photo{
+    object-fit: cover;
+}
+/* =========================================================================================MAIN end===================================================================================================== */
+/* =========================================================================================HOME end===================================================================================================== */
+
+/* ======================================================================================ABOUT start===================================================================================================== */
+/* ======================================================================================MAIN start====================================================================================================== */
+.article-about{
+    background: var(--black_60);
+    text-align: center;
+    padding: 104px 0 111px 0;
+    color: var(--white);
+}
+.content__title{
+    font-weight: 500;
+    font-size: 62px;
+    margin-bottom: 6px;
+}
+.content__info{
+    font-family: var(--fNs);
+    font-weight: 400;
+    font-size: 22px;
+    line-height: 36px;
+    margin-bottom: 0;
+}
+.works{
+    background: var(--green);
+}
+.icon__title_margin{
+    margin: 5px 0;
+}
+.statistic__icon_margin{
+    margin-bottom: 0;
+}
+.icon__info_margin{
+    margin-top: 0;
+}
+/* ======================================================================================MAIN end======================================================================================================== */
+/* ======================================================================================ABOUT end======================================================================================================= */
+
+/* ======================================================================================INSTANCE start================================================================================================== */
+.instance__me{
+    background: var(--white_light);
+}
+.instance__content{
+    max-width: 445px;
+    width: 100%;
+}
+.instance__title{
+    font-weight: 500;
+    font-size: 30px;
+    color: var(--black_prof);
+    margin-bottom: 31px;
+    text-align: left;
+}
+.instance__description{
+    font-family: var(--fNs);
+    font-weight: 400;
+    font-size: 16px;
+    color: var(--grey);
+    line-height: 24px;
+    margin-bottom: 24px;
+    max-width: 445px;
+    width: 100%;
+}
+.instance__signature{
+    margin-top: 13px;
+}
+/* ======================================================================================INSTANCE end==================================================================================================== */
+
+/* ======================================================================================NEED start====================================================================================================== */
+.need__content{
+    margin: 100px 0;
+}
+.instance__link{
+    font-size: 12px;
+    text-transform: uppercase;
+    background: var(--green);
+    color: var(--white);
+    padding: 22px 43px;
+    margin-top: 53px;
+}
+.instance__link:hover{
+    color: var(--white);
+    background: rgb(0, 77, 0);
+}
+/* ======================================================================================NEED end======================================================================================================== */
+
+/* ======================================================================================TALK start====================================================================================================== */
+/* ======================================================================================MAIN start====================================================================================================== */
+.talk{
+    height: 730px;
+    background: var(--prof_bg);
+}
+.talk__title{
+    font-weight: 500;
+    font-size: 38px;
+    color: var(--black_prof);
+    margin-bottom: 29px;
+}
+.talk__description{
+    line-height: 24px;
+    font-family: var(--fNs);
+    font-weight: 400;
+    font-size: 16px;
+    color: var(--grey);
+    margin-bottom: 24px;
+}
+.talk__price{
+    margin-top: 57px;
+}
+.price__title{
+    font-family: var(--fNs);
+    font-weight: 700;
+    font-size: 16px;
+    color: var(--black_prof);
+    margin-bottom: 14px;
+}
+.price__title_weight{
+    font-weight: 400;
+}
+/* ======================================================================================MAIN end======================================================================================================== */
+/* ======================================================================================TALK end======================================================================================================== */
